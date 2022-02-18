@@ -1,6 +1,10 @@
-DROP TABLE IF EXISTS test;
+DROP TABLE IF EXISTS products;
 
-CREATE TABLE test (
+CREATE TABLE products (
     id SERIAL PRIMARY KEY, 
-    name TEXT
+    name TEXT,
+    color TEXT,
+    description TEXT,
+    price INTEGER,
+    image TEXT
 );

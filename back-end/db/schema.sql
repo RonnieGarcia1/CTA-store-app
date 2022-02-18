@@ -1,11 +1,15 @@
-DROP DATABASE IF EXISTS cta_dev;
-CREATE DATABASE cta_dev;
+DROP DATABASE IF EXISTS cta_hiking;
+CREATE DATABASE cta_hiking;
 
-\c cta_dev;
+\c cta_hiking;
 
-DROP TABLE IF EXISTS test;
+DROP TABLE IF EXISTS products;
 
-CREATE TABLE test (
+CREATE TABLE products (
     id SERIAL PRIMARY KEY, 
-    name TEXT
+    name TEXT,
+    color TEXT,
+    description TEXT,
+    price INTEGER,
+    image TEXT
 );
