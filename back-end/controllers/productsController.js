@@ -6,17 +6,14 @@ const products = express.Router();
 const { getAllProducts, getOneProduct, createProduct, deleteProduct, updateProduct}= require("../queries/products");
 
 //Get all products
-products.get("/", async (req, res) => {
-    try{
-        const allProducts = await getAllProducts()
+products.get("/", async(req, res) => {
+        const allProducts = await getAllProducts();
         if(allProducts[0]){
-            res.status(200).json(allProducts[0])
+            res.status(200).json(allProducts);
         } else {
             res.status(500).json({ error: "server error" });
         }
-    }catch(err){
-        console.log(err)
-    }
+
 });
 
 //Get one product

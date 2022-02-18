@@ -1,4 +1,4 @@
-const db = require("./db/dbConfig.js");
+const db = require("../db/dbConfig.js");
 
     const getAllProducts = async() => {
         try{
@@ -21,7 +21,6 @@ const db = require("./db/dbConfig.js");
     const createProduct = async(product) => {
         try{
             const newProduct = await db.one(
-                // INSERT CORRECT KEYS AND VALUES
                 "INSERT INTO products (name, color, description, price, image) VALUES($1, $2, $3, $4, $5) RETURNING *",
                 [product.name, product.color, product.description, product.price, product.image]
             )
@@ -34,7 +33,6 @@ const db = require("./db/dbConfig.js");
     const deleteProduct = async(id) => {
         try{
             const deletedProduct = await db.one(
-                // INSERT CORRECT KEYS AND VALUES
                 "DELETE FROM products WHERE ID = $1 RETURNING *",
                 id
             );
