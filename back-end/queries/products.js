@@ -1,4 +1,5 @@
 const db = require("../db/dbConfig.js");
+const products = require("../controllers/productsController.js")
 
     const getAllProducts = async() => {
         try{
@@ -11,7 +12,7 @@ const db = require("../db/dbConfig.js");
 
     const getOneProduct = async(id) => {
         try{
-            const oneProduct = await db.one("SELECT * FROM products WHERE id=$1", id);
+            const oneProduct = await db.one("SELECT * FROM products WHERE id=$1;", id);
             return oneProduct;
         } catch(err){
             return err;
@@ -33,7 +34,7 @@ const db = require("../db/dbConfig.js");
     const deleteProduct = async(id) => {
         try{
             const deletedProduct = await db.one(
-                "DELETE FROM products WHERE ID = $1 RETURNING *",
+                "DELETE FROM products WHERE ID = $1 RETURNING *;",
                 id
             );
             return deletedProduct;
@@ -45,7 +46,7 @@ const db = require("../db/dbConfig.js");
     const updateProduct = async(id, product) => {
         try{
             const updatedProduct = await db.one(
-                "UPDATE products SET name = $1, color = $2, description = $3, price = $4, image = $5 WHERE id = $6 RETURNING *",
+                "UPDATE products SET name=$1, color=$2, description=$3, price=$4, image=$5 WHERE id=$6 RETURNING *;",
                 [product.name, product.color, product.description, product.price, product.image, id]
             );
             return updatedProduct;

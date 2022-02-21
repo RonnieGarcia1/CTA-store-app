@@ -1,30 +1,36 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
-const API = process.env.REACT_APP_API_URL;
+import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-console.log(API);
-function App() {
-  const [days, setDays] = useState([]);
-  useEffect(() => {
-    axios
-      .get(`${API}/test`)
-      .then(
-        (response) => {
-          setDays(response.data);
-        },
-        (error) => console.log("get", error)
-      )
-      .catch((c) => console.warn("catch", c));
-  }, []);
-  return (
-    <div>
-      <ul>
-        {days.map((day) => (
-          <li key={day.name}>{day.name}</li>
-        ))}
-      </ul>
+import Home from "./pages/Home.js";
+import NavBar from './components/NavBar';
+import Index from "./pages/Index.js";
+import ShowOne from './pages/ShowOne';
+import NewProduct from './pages/NewProduct'
+import EditProduct from './pages/EditProduct';
+import ShoppingCart from './pages/ShoppingCart';
+import Footer from './components/Footer';
+import FourOFour from './pages/Four0Four';
+
+const App = () => {
+  return(
+    <div className="App">
+      <Router>
+        <NavBar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Index />} />
+            <Route exact path="/products/:id" element={<ShowOne />} />
+            <Route path="/products/new" element={<NewProduct />} />
+            <Route path="/products/:id/edit" element={<EditProduct />} />
+            <Route path="/cart" element={<ShoppingCart />} />
+            <Route path="*" element={<FourOFour />} />
+          </Routes>
+        </main>
+      </Router>
+      <Footer />
     </div>
-  );
-}
-
+  )
+};
 export default App;
