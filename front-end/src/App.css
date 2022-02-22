@@ -192,6 +192,11 @@ input[type=text], select, textarea {
     display: table;
     clear: both;
   }
+
+  .about-header{
+    text-align: center;
+    margin: 120px;
+  }
   
   Footer{
         text-align: center;
