@@ -55,7 +55,7 @@ function ShowOneProduct(){
                 <img className="show-one-image"src={product.image} alt="product" />
                     <div className="product-details">
                     <p><b>{product.name}</b></p>
-                   <b>Color:&nbsp;&nbsp;&nbsp;</b><em>{product.color}</em>
+                    <b>Color:&nbsp;&nbsp;&nbsp;</b><em>{product.color}</em>
                     <p>{product.description}</p>
                     <p><strong>{formattedPrice}</strong></p>
                     <Link className="atc-btn" style={{ textDecoration: 'none', color: 'black' }} to={"/cart"}>Add To Cart</Link>

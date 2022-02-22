@@ -32,9 +32,14 @@ function Products() {
     <div className="products">
       <Ticker className="ticker">
         {({ index }) => (
-            <h1>FREE SHIPPING ON ORDERS OVER $99&nbsp;&nbsp;&nbsp;</h1>
+            <h1>OUR BIGGEST SALE EVER &nbsp;+&nbsp; FREE SHIPPING ON ORDERS OVER $99 &nbsp;&nbsp;+&nbsp;&nbsp;</h1>
         )}
         </Ticker>
+        <aside>
+            <b>Climbing Gear</b> &nbsp;&nbsp;&nbsp;&nbsp;<b>Mountain Bikes</b>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>Footwear</b> &nbsp;&nbsp;&nbsp;&nbsp;<b>Outerwear</b>
+          </aside>
       <section>
           {products.map((product, id) => {
               return(

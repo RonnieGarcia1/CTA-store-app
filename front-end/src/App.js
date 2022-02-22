@@ -9,6 +9,7 @@ import ShowOne from './pages/ShowOne';
 import NewProduct from './pages/NewProduct'
 import EditProduct from './pages/EditProduct';
 import About from './pages/About';
+import Profile from './components/Profile';
 import Cart from './pages/Cart';
 import Footer from './components/Footer';
 import FourOFour from './pages/Four0Four';
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/products/new" element={<NewProduct />} />
             <Route path="/products/:id/edit" element={<EditProduct />} />
             <Route path="/about" element={<About />} />
+            <Route path="/userprofile" element={<Profile/>} />
             <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<FourOFour />} />
           </Routes>

@@ -8,7 +8,7 @@ const Home = () => {
         <div className="home">
         <Ticker className="ticker">
         {({ index }) => (
-            <h1>FREE SHIPPING ON ORDERS OVER $99&nbsp;&nbsp;&nbsp;</h1>
+            <h1>FREE SHIPPING ON DOMESTIC USA ORDERS OVER $99&nbsp;&nbsp;&nbsp;</h1>
         )}
         </Ticker>
             <div className="centered">

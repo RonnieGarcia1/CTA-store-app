@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Loading from "./Loading";
+// import Loading from "./Loading";
+import LoginButton from "./LoginButton";
+import LogoutButton from "./LogoutButton";
 
 function NavBar(){
     return(
@@ -20,7 +22,9 @@ function NavBar(){
             <Link style={{ textDecoration: 'none', color: 'black' }} variant="outlined" component={Link} to={`/careers`}>
                 <h4>Careers</h4>
             </Link>
-            <Loading/>
+            {/* <Loading /> */}
+            <LoginButton />
+            <LogoutButton />
             {/* <AddShoppingCart fontSize="inherit" style={{ fontSize: "200px" }} to={`/cart`} /> */}
             <Link style={{ textDecoration: 'none', color: 'black' }} component={Link} to={`/cart`}>
                 <img id="add-to-cart" alt="shopping cart sprite" src={"https://media.istockphoto.com/vectors/shopping-cart-icon-isolated-on-white-background-vector-id1206806317?k=20&m=1206806317&s=170667a&w=0&h=kEh5VLsTHukWc7xf2BvUs8ssqS_d7vkK0-xU3MDpO7s="} />
