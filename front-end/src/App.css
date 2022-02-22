@@ -162,12 +162,16 @@ input[type=text], select, textarea {
       margin-left: 25%;
     width: 50%;
     border-radius: 5px;
-    color: white;
-    background-color: #060054;
+    color: rgb(235, 241, 204);
+    background-color:rgb(0, 39, 8);
     padding: 20px;
   }
 
   .new-product-form{
+    margin: 50px;
+  }
+
+  .edit-form{
     margin: 50px;
   }
   
@@ -203,4 +207,13 @@ input[type=text], select, textarea {
       padding:10px;
       bottom: 0;
       position: sticky;
+    }
+
+    .error-container{
+      text-align: center;
+      margin-bottom: 230px;
+    }
+
+    .error-container img {
+      width: 400px;
     }

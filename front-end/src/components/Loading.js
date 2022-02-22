@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Fade from '@mui/material/Fade';
-import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
 
@@ -35,9 +34,9 @@ import Typography from '@mui/material/Typography';
     <Box
       sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
     >
-      <Box sx={{ height: 40 }}>
+      <Box sx={{ height: 5 }}>
         {query === 'success' ? (
-          <Typography className="load-success">login failed</Typography>
+          <Typography className="load-success"><h4>login failed</h4></Typography>
         ) : (
           <Fade
             in={query === 'progress'}
@@ -49,10 +48,11 @@ import Typography from '@mui/material/Typography';
             <CircularProgress />
           </Fade>
         )}
+        <br></br>
       </Box>
-      <Button onClick={handleClickQuery} sx={{ m: 2 }}>
-        {query !== 'idle' ? 'nvm' : 'Login'}
-      </Button>
+      <h4 onClick={handleClickQuery} sx={{ m: 2 }}>
+        {query !== 'idle' ? 'logging you in...' : 'Login'}
+      </h4>
     </Box>
   );
 }

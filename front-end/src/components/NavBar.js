@@ -14,6 +14,12 @@ function NavBar(){
             <Link style={{ textDecoration: 'none', color: 'black' }} variant="outlined" component={Link} to={`/products/new`}>
                 <h4>Add Inventory</h4>
             </Link>
+            <Link style={{ textDecoration: 'none', color: 'black' }} variant="outlined" component={Link} to={`/about`}>
+                <h4>About</h4>
+            </Link>
+            <Link style={{ textDecoration: 'none', color: 'black' }} variant="outlined" component={Link} to={`/careers`}>
+                <h4>Careers</h4>
+            </Link>
             <Loading/>
             {/* <AddShoppingCart fontSize="inherit" style={{ fontSize: "200px" }} to={`/cart`} /> */}
             <Link style={{ textDecoration: 'none', color: 'black' }} component={Link} to={`/cart`}>

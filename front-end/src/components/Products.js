@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
+import Ticker from "react-ticker";
 
 //importing environmental variable
 const API = process.env.REACT_APP_API_URL;
@@ -29,6 +30,11 @@ function Products() {
 
   return (
     <div className="products">
+      <Ticker className="ticker">
+        {({ index }) => (
+            <h1>FREE SHIPPING ON ORDERS OVER $99&nbsp;&nbsp;&nbsp;</h1>
+        )}
+        </Ticker>
       <section>
           {products.map((product, id) => {
               return(
