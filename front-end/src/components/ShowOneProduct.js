@@ -2,7 +2,6 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { Button } from "@mui/material";
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -55,15 +54,15 @@ function ShowOneProduct(){
                 <div className="show-one">
                 <img className="show-one-image"src={product.image} alt="product" />
                     <div className="product-details">
-                    <p>{product.name}</p>
-                    <p>{product.color}</p>
+                    <p><b>{product.name}</b></p>
+                   <b>Color:&nbsp;&nbsp;&nbsp;</b><em>{product.color}</em>
                     <p>{product.description}</p>
-                    <p>{formattedPrice}</p>
-                    <Button variant="contained" color="success"><Link to={"/cart"}>Add To Cart</Link></Button>
+                    <p><strong>{formattedPrice}</strong></p>
+                    <Link className="atc-btn" style={{ textDecoration: 'none', color: 'black' }} to={"/cart"}>Add To Cart</Link>
                     <br></br>
                     <br></br>
-                    <Button className="edit-btn" variant="outlined" component={Link} to={`/products/${id}/edit`}>Edit</Button>
-                    <Button variant="contained" onClick={handleDelete} color="error">Delete</Button>
+                    <button><Link className="edit-btn" style={{ textDecoration: 'none', color: 'black' }}  component={Link} to={`/products/${id}/edit`}>Edit</Link></button>
+                    <button variant="contained" onClick={handleDelete} color="error">Delete</button>
                     </div>
                 </div>
             </div>
