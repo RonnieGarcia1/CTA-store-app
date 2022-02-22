@@ -28,6 +28,11 @@ nav {
   align-items: center;
   box-shadow: 2px 2px 4px grey;
 }
+/* 
+b{
+  margin: 180px;
+  color: rgb(91, 91, 91);
+} */
 
 .ticker{
   color: rgb(235, 241, 204);
