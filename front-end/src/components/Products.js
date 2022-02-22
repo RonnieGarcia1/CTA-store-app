@@ -11,11 +11,9 @@ console.log(API);
 function Products() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    axios
-      .get(`${API}/products`)
-      .then(
-        (response) => {
-          setProducts(response.data);
+    axios.get(`${API}/products`)
+      .then((res) => {
+          setProducts(res.data);
         },
         (error) => console.log("get", error)
       )
@@ -24,19 +22,24 @@ function Products() {
 
   console.log(products)
 
+    //Webpage x & y axis set to 0 on click
+    const scrollToTop = () => {
+      window.scrollTo(0, 0)
+    }
+
   return (
     <div className="products">
       <section>
           {products.map((product, id) => {
               return(
-                <Link key={product.id} to={`/products/${product.id}`}>
-                    <div className="products-2">
-                        {/* <p><strong>{product.description}</strong></p> */}
-                        <img className="product-cards" src={product.image} alt="products"/>
-                        <p>{product.name}</p>
-                        <p>{product.color}</p>
-                    </div>
-                </Link>
+                <div className="products-2">
+                  <Link onClick={scrollToTop} key={product.id} to={`/products/${product.id}`}>
+                    {/* <p><strong>{product.description}</strong></p> */}
+                    <img className="product-cards" src={product.image} alt="products"/>
+                  </Link>
+                    <h4>{product.name}</h4>
+                    <em>{product.color}</em>
+                  </div>
               )
           })}
       </section>

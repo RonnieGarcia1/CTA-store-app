@@ -8,7 +8,7 @@ import Index from "./pages/Index.js";
 import ShowOne from './pages/ShowOne';
 import NewProduct from './pages/NewProduct'
 import EditProduct from './pages/EditProduct';
-import ShoppingCart from './pages/ShoppingCart';
+import Cart from './pages/Cart';
 import Footer from './components/Footer';
 import FourOFour from './pages/Four0Four';
 
@@ -24,7 +24,7 @@ const App = () => {
             <Route exact path="/products/:id" element={<ShowOne />} />
             <Route path="/products/new" element={<NewProduct />} />
             <Route path="/products/:id/edit" element={<EditProduct />} />
-            <Route path="/cart" element={<ShoppingCart />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<FourOFour />} />
           </Routes>
         </main>
