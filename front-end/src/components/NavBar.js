@@ -22,6 +22,7 @@ function NavBar(){
             </Link>
             {/* <Loading /> */}
             <Link style={{ textDecoration: 'none', color: 'black' }}  component={Link} to={`/userprofile`}>
+                <img className="user-sign-in-logo" alt="user signin" src={"https://cdn-icons-png.flaticon.com/512/456/456212.png"} />
                 <h4 className="nav-btns">Profile</h4>
             </Link>
             <LoginButton />

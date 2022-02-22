@@ -30,17 +30,12 @@ function ShowOneProduct(){
 
     console.log(product)
 
-    //PRICE FORMATTER
-        
-        //NO COMMAS
-        
         const financials = () => {
               return Number.parseFloat(product.price).toFixed(2);
           }
           console.log(financials(product.price))
         
-        //COMMAS AND DOLLAR SIGNS
-
+    //COMMAS AND DOLLAR SIGNS
     var formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
         currency: 'USD',
