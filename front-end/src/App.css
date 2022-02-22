@@ -33,19 +33,11 @@ nav {
   color: rgb(120, 120, 120);
 }
 
-<<<<<<< HEAD
 button {
   border-radius: 8px;
   color: rgb(235, 241, 204);
   background-color: rgb(0, 39, 8);
 }
-=======
-/* 
-b{
-  margin: 180px;
-  color: rgb(91, 91, 91);
-} */
->>>>>>> 5dc7359a29ef8161e5c9a52410309de88b618e50
 
 .ticker{
   color: rgb(235, 241, 204);
@@ -127,10 +119,7 @@ b{
 }
 
 .atc-btn{
-<<<<<<< HEAD
   border-radius: 2px;;
-=======
->>>>>>> 5dc7359a29ef8161e5c9a52410309de88b618e50
   border: 1px solid;
   padding: 5px;
 }

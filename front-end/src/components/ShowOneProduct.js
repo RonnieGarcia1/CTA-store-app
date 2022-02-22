@@ -50,7 +50,6 @@ function ShowOneProduct(){
       console.log(formattedPrice);
 
     return(
-<<<<<<< HEAD
         <div>
         <div className="show-one">
             <img className="show-one-image"src={product.image} alt="product" />
@@ -67,24 +66,6 @@ function ShowOneProduct(){
             </div>
             </div>
         </div>
-=======
-            <div>
-                <div className="show-one">
-                <img className="show-one-image"src={product.image} alt="product" />
-                    <div className="product-details">
-                    <p><b>{product.name}</b></p>
-                    <b>Color:&nbsp;&nbsp;&nbsp;</b><em>{product.color}</em>
-                    <p>{product.description}</p>
-                    <p><strong>{formattedPrice}</strong></p>
-                    <Link className="atc-btn" style={{ textDecoration: 'none', color: 'black' }} to={"/cart"}>Add To Cart</Link>
-                    <br></br>
-                    <br></br>
-                    <button><Link className="edit-btn" style={{ textDecoration: 'none', color: 'black' }}  component={Link} to={`/products/${id}/edit`}>Edit</Link></button>
-                    <button variant="contained" onClick={handleDelete} color="error">Delete</button>
-                    </div>
-                </div>
-            </div>
->>>>>>> 5dc7359a29ef8161e5c9a52410309de88b618e50
     )
 }
 
