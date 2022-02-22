@@ -39,7 +39,7 @@ function EditProductForm(){
 
     return(
         <div className="new-form">
-             <h3>Edit Product</h3>
+             <h3 className="new-form-header">Edit Product</h3>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="Name">Product Name</label>
                 <br></br>

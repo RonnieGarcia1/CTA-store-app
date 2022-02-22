@@ -28,7 +28,7 @@ const NewProductForm = () => {
     };
     return (
         <div className="new-form">
-            <h3>Add a new item</h3>
+            <h3 className="new-form-header">Add a new Product to the store.</h3>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="Name">Name</label>
                 <br></br>
