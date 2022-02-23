@@ -13,7 +13,7 @@ const Profile = () => {
   return (
     isAuthenticated && (
       <div className="user-profile">
-        <img clasName="user-profile-img" src={user.picture} alt={user.name} />
+        <img className="user-profile-img" src={user.picture} alt={user.name} />
         <h2>{user.name}</h2>
         <div className="user-profile-details">
         <br></br>
