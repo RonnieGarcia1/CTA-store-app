@@ -226,9 +226,14 @@ input[type=submit]:hover {
     margin-bottom: 550px;
 }
 
+.user-profile-img{
+  border-radius: 50%;
+}
+
 .user-profile-details {
     color: gray;
 }
+
   
 .please-log-in{
     text-align: center;
