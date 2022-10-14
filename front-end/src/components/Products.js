@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
-import Ticker from "react-ticker";
+import AdTicker from "./AdTicker";
 
 //importing environmental variable
 const API = process.env.REACT_APP_API_URL;
@@ -30,11 +30,7 @@ function Products() {
 
   return (
     <div className="products">
-      <Ticker className="ticker">
-        {({ index }) => (
-            <h1>OUR BIGGEST SALE EVER &nbsp;+&nbsp; FREE SHIPPING ON ORDERS OVER $99 &nbsp;&nbsp;+&nbsp;&nbsp;</h1>
-        )}
-        </Ticker>
+      <AdTicker />
         <aside>
             <b>Climbing Gear</b> &nbsp;&nbsp;&nbsp;&nbsp;<b>Mountain Bikes</b>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

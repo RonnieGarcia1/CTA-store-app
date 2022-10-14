@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom"
-// import Ticker from 'react-ticker'
 import AdTicker from "../components/AdTicker";
 
 const Home = () => {
@@ -8,11 +7,6 @@ const Home = () => {
     return (
         <div className="home">
             <AdTicker />
-        {/* <Ticker className="ticker">
-        {({ index }) => (
-            <h1 className="ticker-h1">FREE SHIPPING ON DOMESTIC USA ORDERS OVER $99&nbsp;&nbsp;&nbsp;</h1>
-        )}
-        </Ticker> */}
             <div className="centered">
                 <h3>
                     Arcteryx x Jil Sander+ Collection now available!

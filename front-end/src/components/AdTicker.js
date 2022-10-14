@@ -7,7 +7,7 @@ const AdTicker = () => {
     <div>
       <Ticker className="ticker">
         {({ index }) => (
-            <h1 className="ticker-h1">FREE SHIPPING ON DOMESTIC USA ORDERS OVER $99&nbsp;&nbsp;&nbsp;</h1>
+            <h1 className="ticker-h1">FREE SHIPPING ON DOMESTIC USA ORDERS OVER $99</h1>
         )}
         </Ticker>
     </div>

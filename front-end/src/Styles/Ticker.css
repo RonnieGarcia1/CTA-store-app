@@ -1,3 +1,4 @@
 .ticker-h1{
   margin: 5px;
+  white-space: nowrap;
 }
