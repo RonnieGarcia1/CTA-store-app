@@ -1,11 +1,14 @@
-//import express
+//import express object
 const express = require("express");
+
+//renaming router
 const products = express.Router();
 
 //import queries
 const { getAllProducts, getOneProduct, createProduct, deleteProduct, updateProduct}= require("../queries/products");
 
 //Get all products
+//end point
 products.get("/", async(req, res) => {
         const allProducts = await getAllProducts();
         if(allProducts[0]){
@@ -16,6 +19,7 @@ products.get("/", async(req, res) => {
 
 });
 
+//request handlers
 //Get one product
 products.get("/:id", async (req, res) => {
     const { id } = req.params;

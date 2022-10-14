@@ -12,7 +12,7 @@ function NavBar(){
                 <h4 className="nav-btns">Products</h4>
             </Link>
             <Link style={{ textDecoration: 'none', color: 'black' }} component={Link} to={`/products/new`}>
-                <h4 className="nav-btns">Add Inventory</h4>
+                <h4 className="nav-btns">Inventory</h4>
             </Link>
             <Link style={{ textDecoration: 'none', color: 'black' }}  component={Link} to={`/about`}>
                 <h4 className="nav-btns">About</h4>
@@ -23,7 +23,7 @@ function NavBar(){
             {/* <Loading /> */}
             <Link style={{ textDecoration: 'none', color: 'black' }}  component={Link} to={`/userprofile`}>
                 <img className="user-sign-in-logo" alt="user signin" src={"https://cdn-icons-png.flaticon.com/512/456/456212.png"} />
-                <h4 className="nav-btns">Profile</h4>
+                <h4 className="nav-btns">Account</h4>
             </Link>
             <LoginButton />
             {/* <AddShoppingCart fontSize="inherit" style={{ fontSize: "200px" }} to={`/cart`} /> */}

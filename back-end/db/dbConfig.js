@@ -1,4 +1,4 @@
-// http://vitaly-t.github.io/pg-promise/module-pg-promise.html
+//// Loading and initializing the library:
 const pgp = require("pg-promise")();
 require("dotenv").config();
 
@@ -20,7 +20,7 @@ const cn = DATABASE_URL
       user: PG_USER,
       // password: PG_PASSWORD,
     };
-
+// Creating a new database instance from the connection details:
 const db = pgp(cn);
 
 module.exports = db;

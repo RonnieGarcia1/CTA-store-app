@@ -14,6 +14,8 @@ app.get("/", (req, res) => {
   res.send("Hello, world!");
 });
 
+//anything that starts with products use productsController file....
+
 app.use("/products", productsController);
 
 app.get("*", (req, res) => {

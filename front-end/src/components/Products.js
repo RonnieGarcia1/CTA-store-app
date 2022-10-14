@@ -39,7 +39,19 @@ function Products() {
             <b>Climbing Gear</b> &nbsp;&nbsp;&nbsp;&nbsp;<b>Mountain Bikes</b>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <b>Footwear</b> &nbsp;&nbsp;&nbsp;&nbsp;<b>Outerwear</b>
-          </aside>
+        </aside>
+        <div>
+          <ul>
+            <select>
+              <option>
+                Sort
+              </option>
+              <option>
+                Filter
+              </option>
+            </select>
+          </ul>
+        </div>
       <section>
           {products.map((product, id) => {
               return(
