@@ -1,5 +1,5 @@
 /* .App{
-   background-color: white;
+   background-color: #252525;
 } */
 
 input{
@@ -22,9 +22,8 @@ nav {
   background-attachment: fixed;
   background-size: cover;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
-  box-shadow: 2px 2px 4px grey;
 }
 
 .nav-btns{
@@ -58,6 +57,7 @@ button {
 }
 
 .home-btn {
+    /* width:50%; */
     padding:0;
 }
 
@@ -73,7 +73,7 @@ button {
 .home-thubnail {
     margin-left: 50px;
     padding: 0;
-    width: 200px;
+    width: 100px;
 
 }
 
@@ -214,11 +214,6 @@ input[type=submit]:hover {
     content: "";
     display: table;
     clear: both;
-}
-
-.about-header{
-    text-align: center;
-    margin: 120px;
 }
 
 .user-profile{

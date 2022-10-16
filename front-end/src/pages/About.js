@@ -30,7 +30,10 @@ const About = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-                <img alt="family" src="https://montemlife.com/wp-content/uploads/2019/03/family.jpg" />
+                <div className="aboutPage-img-container">
+                <img id="about-image" alt="family" src="https://montemlife.com/wp-content/uploads/2019/03/family.jpg" />
+                </div>
+            
         </div>
     )
 }

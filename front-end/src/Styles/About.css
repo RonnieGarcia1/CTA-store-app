@@ -1,6 +1,26 @@
+
+.about-header {
+  color: white;
+  background-color: #252525;
+  text-align: center;
+  margin: 120px;
+  }
+
+  .aboutPage-img-container{
+      text-align: center;
+  }
+
+  #about-image{
+    width: 50%;
+  }
+
 /* iphone 13 and iphone 13 Pro */
 /* 2532x1170 pixels at 460ppi */
 
 @media only screen and (max-width: 600px) {
-  
+  .about-header {
+    background-color: aqua;
+    text-align: center;
+    margin: 120px;
+    }
 }
