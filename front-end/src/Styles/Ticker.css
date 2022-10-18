@@ -1,3 +1,8 @@
+.ticker{
+  color: rgb(235, 241, 204);
+  background-color: rgb(0, 39, 8);
+}
+
 .ticker-h1{
   margin: 5px;
   white-space: nowrap;
