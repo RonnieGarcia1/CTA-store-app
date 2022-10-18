@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import '../Styles/ShowOne.css';
 import { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 
